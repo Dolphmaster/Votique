@@ -1,0 +1,8 @@
+@import "tailwindcss";
+
+@theme {
+    --color-brand-dark-navy : #14151F; /* Hero, footer, scroller */
+    --color-accent : #D9a94e; /*Buttons, CTA highlights, active states */
+    --color-brand-light: #f5f6fa; /*off white background for other sections*/
+    --color-muted: #6b6f85; /* for secondary texts, descriptions, subheadlines*/
+}
