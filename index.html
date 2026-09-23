@@ -5,34 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Votique</title>
     <link rel="stylesheet" href="./public/output.css">
-    <script src="index.js" defer></script>
+    <script src="index.js"></script>
 </head>
 <body>
-    <header class="bg-brand-dark-navy/60 flex justify-between items-center py-3 px-4">
+    <header class="bg-brand-dark-navy/60 flex justify-between items-center py-3 px-4 overflow-hidden">
         <a href="/" >
-            <div class=" flex items-center gap-2">
+            <div class=" flex items-center gap-2 max-w-7xl">
             <img src="./public/images/Votique-logo.png" alt="Votique logo" class="h-8 w-8">
             <span class="text-xl text-white font-serif">Votique</span>
         </div>
         </a>
         <nav>
-            <ul class="text-gray-400 font-light space-x-8 flex">
+            <ul class="text-brand-light/70 font-light space-x-8 flex max-w-7xl">
                 <li>
-                  <a href="">How it works</a>
+                  <a href="#how-it-works">How it works</a>
                 </li>
                 <li>
-                  <a href="">Use cases</a>
+                  <a href="#use-cases">Use cases</a>
                 </li>
                 <li>
-                  <a href="">Features</a>
+                  <a href="#features">Features</a>
                 </li>
                 <li>
                   <a href="">Pricing</a>
                 </li>
             </ul>
         </nav>
-        <div class="space-x-2">
-        <a href=""><span class="text-gray-400">Log in</span></a>
+        <div class="space-x-2 max-w-7xl">
+        <a href="./login.html"><span class="text-brand-light/80">Log in</span></a>
         <button class="bg-accent py-1.5 px-4 text-brand-dark-navy rounded-md text-sm font-medium cursor-pointer">Launch a vote</button>
         </div>
     </header>
@@ -44,87 +44,105 @@
             <a href=""><button class="bg-accent py-2 px-3.5 text-brand-dark-navy rounded-sm text-sm text-center cursor-pointer" >Launch a vote</button></a>
             <a href=""><button class="rounded-sm bg-transparent text-muted text-center text-sm py-2 px-3.5 border border-muted cursor-pointer" >See how it works</button></a>
         </div>
-        <hr class="text-white w-[50vw] text-center mx-auto pb-6">
-        <div class="flex gap-4 pb-4 cursor-pointer">
-            <div class="bg-gray-400 rounded-sm py-1 px-3">
-                <p class="text-white text-sm">Employee of the month <span class="text-xs text-muted pl-2">12 nominees</span></p>
-            </div>
-            <div class="bg-gray-400 rounded-sm py-1 px-3">
-                <p class="text-white text-sm">Fan favorite actor <span class="text-xs text-muted pl-2">24 nominees</span></p>
-            </div>
-             <div class="bg-gray-400 rounded-sm py-1 px-3">
-                <p class="text-white text-sm">Faculty research grant <span class="text-xs text-muted pl-2">6 candidates</span></p>
-            </div>
-             <div class="bg-gray-400 rounded-sm py-1 px-3">
-                <p class="text-white text-sm">Best student body <span class="text-xs text-muted pl-2">10 nominees</span></p>
-            </div>
-            <div class="bg-gray-400 rounded-sm py-1 px-3">
-                <p class="text-white text-sm">Best student body <span class="text-xs text-muted pl-2">10 nominees</span></p>
-            </div>
-            
-        </div>
+        <hr class="border-white/30 max-w-lg mx-auto pb-6">
+        <div class="overflow-hidden pb-4 cursor-pointer">
+  <div class="flex gap-4 w-max animate-scroll">
+    <!-- set A -->
+    <div class="bg-gray-400 rounded-sm py-1 px-3">
+      <p class="text-white text-sm">Employee of the month <span class="text-xs text-muted pl-2">12 nominees</span></p>
+    </div>
+    <div class="bg-gray-400 rounded-sm py-1 px-3">
+      <p class="text-white text-sm">Fan favorite actor <span class="text-xs text-muted pl-2">24 nominees</span></p>
+    </div>
+    <div class="bg-gray-400 rounded-sm py-1 px-3">
+      <p class="text-white text-sm">Faculty research grant <span class="text-xs text-muted pl-2">6 candidates</span></p>
+    </div>
+    <div class="bg-gray-400 rounded-sm py-1 px-3">
+      <p class="text-white text-sm">Best student body <span class="text-xs text-muted pl-2">10 nominees</span></p>
+    </div>
+    <div class="bg-gray-400 rounded-sm py-1 px-3">
+      <p class="text-white text-sm">Community hero award <span class="text-xs text-muted pl-2">16 nominees</span></p>
+    </div>
+    <!-- set B -->
+    <div class="bg-gray-400 rounded-sm py-1 px-3">
+      <p class="text-white text-sm">Employee of the month <span class="text-xs text-muted pl-2">12 nominees</span></p>
+    </div>
+    <div class="bg-gray-400 rounded-sm py-1 px-3">
+      <p class="text-white text-sm">Fan favorite actor <span class="text-xs text-muted pl-2">24 nominees</span></p>
+    </div>
+    <div class="bg-gray-400 rounded-sm py-1 px-3">
+      <p class="text-white text-sm">Faculty research grant <span class="text-xs text-muted pl-2">6 candidates</span></p>
+    </div>
+    <div class="bg-gray-400 rounded-sm py-1 px-3">
+      <p class="text-white text-sm">Best student body <span class="text-xs text-muted pl-2">10 nominees</span></p>
+    </div>
+    <div class="bg-gray-400 rounded-sm py-1 px-3">
+      <p class="text-white text-sm">Community hero award <span class="text-xs text-muted pl-2">16 nominees</span></p>
+    </div>
+  </div>
+</div>
     </section>
     <!--How it works-->
-    <section class="bg-brand-light pt-12">
+    <section id="how-it-works" class="bg-brand-light pt-12">
         <h2 class="text-center text-brand-dark-navy text-3xl font-semibold font-serif pb-3">How it works</h2>
-        <p class="text-center max-w-md mx-auto pb-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et cum dolor eius, aspernatur saepe rem!</p>
+        <p class="text-center max-w-md mx-auto pb-6">Whether you're starting a gala or voting from your phone, every step is straightforward and transparent</p>
         <div class="rounded-sm p-1.5 bg-muted flex mx-auto w-fit mb-12">
             <button class="toggle-btn px-3 py-1 text-sm rounded-sm bg-white cursor-pointer">For Organizers</button>
             <button class="toggle-btn px-3 py-1 text-sm cursor-pointer">For Voters</button>
         </div>
 
-        <div class="flex justify-evenly border-2  gap-5 pb-20 ml-8 pr-6">
-            <div class="py-7 rounded-sm bg-white px-8 border border-accent">
+        <div class="flex justify-evenly gap-5 pb-20 pr-6 ml-8">
+            <div class="py-7 rounded-sm bg-white px-8 shadow-md">
                 <div class="rounded-sm py-2 px-4 bg-brand-dark-navy text-accent w-fit mb-4">1</div>
                 <h3 class="font-semibold pb-1.5">Build ballot and categories</h3>
-                <p class="text-sm text-muted max-w-sm">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum aperiam ab est repudiandae modi quod.</p>
+                <p class="text-sm text-muted max-w-sm">Add award tiers, upload nominee potraits and bios, and configure single-choice or ranked voting mechanics</p>
             </div>
-            <div class="py-7 rounded-sm bg-white px-8">
+            <div class="py-7 rounded-sm bg-white px-8 shadow-md">
                 <div class="rounded-sm py-2 px-4 bg-brand-dark-navy text-accent w-fit mb-4">2</div>
                 <h3 class="font-semibold pb-1.5">Share private invitation</h3>
-                <p class="text-sm text-muted max-w-sm">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum aperiam ab est repudiandae modi quod.</p>
+                <p class="text-sm text-muted max-w-sm">Distribute one shared link with work email restrictions, passcode protection, or open guest access.</p>
             </div>
-            <div class="py-7 rounded-sm bg-white px-8">
+            <div class="py-7 rounded-sm bg-white px-8 shadow-md">
                 <div class="rounded-sm py-2 px-4 bg-brand-dark-navy text-accent w-fit mb-4">3</div>
                 <h3 class="font-semibold pb-1.5">Reveal the crown</h3>
-                <p class="text-sm text-muted max-w-sm">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum aperiam ab est repudiandae modi quod.</p>
+                <p class="text-sm text-muted max-w-sm">Tallies stay confidential until you choose the reveal moment, on stage, in an all-hands, or online.</p>
             </div>
         </div>
 
     </section>
     <!--Use Cases-->
-    <section class="bg-white pt-12 pl-8">
+    <section id="use-cases" class="bg-white pt-12 pl-8">
         <h2 class="text-left text-brand-dark-navy text-3xl font-semibold font-serif pb-3 pl-0.5">Built for every kind of vote</h2>
         <p class="text-left max-w-lg pb-12">From intimate boardroom citations to broad fan engagement, <span class="text-accent">Votique </span>scales cleanly to any audience size.</p>
-        <div class="flex justify-evenly gap-8 pb-20 pr-6 border-2 ">
+        <div class="flex justify-evenly gap-8 pb-20 pr-6">
             <div class="bg-gray-400 rounded-md px-5 pt-5">
-                <div class="rounded-lg py-2 px-4 bg-brand-dark-navy text-accent w-fit mb-4">1</div>
+                <div class="rounded-md py-2 px-4 bg-brand-dark-navy text-accent w-fit mb-4">1</div>
                 <h3 class="text-brand-dark-navy font-semibold font-serif pb-2">Companies</h3>
-                <p class="text-sm max-w-md pb-6 text-brand-light">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed, sint explicabo sit quam harum illum?</p>
+                <p class="text-sm max-w-md pb-6 text-brand-light">Recognise your team and run employee awards without a spreadsheet.</p>
                 <p class="font-serif font-semibold text-xs pb-6">Domain-gated voting</p>
                 </div>  
                  <div class="bg-gray-400 px-5 pt-5 rounded-md">
-                <div class="rounded-lg py-2 px-4 bg-brand-dark-navy text-accent w-fit mb-4">2</div>
-                <h3 class="text-brand-dark-navy font-semibold font-serif pb-2">Companies</h3>
-                <p class="text-sm max-w-md pb-6 text-brand-light">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed, sint explicabo sit quam harum illum?</p>
-                <p class="font-serif font-semibold text-xs pb-6">Domain-gated voting</p>
+                <div class="rounded-md py-2 px-4 bg-brand-dark-navy text-accent w-fit mb-4">2</div>
+                <h3 class="text-brand-dark-navy font-semibold font-serif pb-2">Schools & unions</h3>
+                <p class="text-sm max-w-md pb-6 text-brand-light">Verified elections with ID checks built in, matric numbers included.</p>
+                <p class="font-serif font-semibold text-xs pb-6">Single-vote roster lists</p>
                 </div>
                  <div class="bg-gray-400 px-5 pt-5 rounded-md">
-                <div class="rounded-lg py-2 px-4 bg-brand-dark-navy text-accent w-fit mb-4">3</div>
-                <h3 class="text-brand-dark-navy font-semibold font-serif pb-2">Companies</h3>
-                <p class="text-sm max-w-md pb-6 text-brand-light">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed, sint explicabo sit quam harum illum?</p>
-                <p class="font-serif font-semibold text-xs">Domain-gated voting</p>
+                <div class="rounded-md py-2 px-4 bg-brand-dark-navy text-accent w-fit mb-4">3</div>
+                <h3 class="text-brand-dark-navy font-semibold font-serif pb-2">Fan & award shows</h3>
+                <p class="text-sm max-w-md pb-6 text-brand-light">Public voting for the categories your audience is obsessed with.</p>
+                <p class="font-serif font-semibold text-xs">Live ceremony presentation</p>
                 </div>
                  <div class="bg-gray-400 rounded-md px-5 pt-5">
-                <div class="rounded-lg py-2 px-4 bg-brand-dark-navy text-accent w-fit mb-4">4</div>
-                <h3 class="text-brand-dark-navy font-semibold font-serif pb-2">Companies</h3>
-                <p class="text-sm max-w-md pb-6 text-brand-light">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed, sint explicabo sit quam harum illum?</p>
-                <p class="font-serif font-semibold text-xs pb-6">Domain-gated voting</p>
+                <div class="rounded-md py-2 px-4 bg-brand-dark-navy text-accent w-fit mb-4">4</div>
+                <h3 class="text-brand-dark-navy font-semibold font-serif pb-2">Clubs & communities</h3>
+                <p class="text-sm max-w-md pb-6 text-brand-light">Decide anything, from book club picks to community leads.</p>
+                <p class="font-serif font-semibold text-xs pb-6">Instant mobile voting</p>
         </div>
                  </div>
                  </section>
                  <!--Features-->
-                  <section class="bg-brand-light pt-12">
+                  <section id="features" class="bg-brand-light pt-12">
         <h2 class="text-center text-brand-dark-navy text-3xl font-semibold font-serif pb-3 max-w-md mx-auto">Designed for Integrity and Elegance</h2>
         <p class="text-center max-w-lg mx-auto pb-6">Everything you need to run high-stakes votes with no logistical friction.</p>
         <div class="grid grid-cols-3 gap-10 pb-20 ml-8 pr-6">
@@ -138,96 +156,96 @@
                 </div>
                 <div class="flex items-center gap-3 pb-3">
                     <div class="rounded-full w-2 h-2 bg-accent"></div>
-                    <p class="text-sm">Custom ceremony branding, typography, and cover imagery</p>
+                    <p class="text-sm">Rich media candidate dossiers with portfolios and statements</p>
                 </div>
                 <div class="flex gap-3 items-center pb-3">
                     <div class="rounded-full w-2 h-2 bg-accent"></div>
-                    <p class="text-sm">Custom ceremony branding, typography, and cover imagery</p>
+                    <p class="text-sm">Multi-tier category nesting with custom ballot weighting</p>
                 </div>
                 <div class="flex gap-3 items-center">
                     <div class="rounded-full w-2 h-2 bg-accent"></div>
-                    <p class="text-sm">Custom ceremony branding, typography, and cover imagery</p>
+                    <p class="text-sm">Configurable nomination intake periods and approval queues</p>
                 </div>
             </div>
             <div>
                 <hr class="pb-5">
-                <h3 class="font-semibold text-brand-dark-navy pb-3 text-xl">Setup & Customization</h3>
-                <p class="text-sm text-brand-dark-navy/50 max-w-md pb-6">Full creative command over how ballots look, from custom brands marks to candidates storytelling</p>
+                <h3 class="font-semibold text-brand-dark-navy pb-3 text-xl">Verification & security</h3>
+                <p class="text-sm text-brand-dark-navy/50 max-w-md pb-6">Tamper-resistant custody that prevents duplicate votes, ballot stuffing, and unauthorized participants.</p>
                 <div class="flex items-center gap-3 pb-3">
                     <div class="rounded-full w-2 h-2 bg-accent"></div>
-                    <p class="max-w-md text-sm">Custom ceremony branding, typography, and cover imagery</p>
+                    <p class="max-w-md text-sm">Workplace SSO and domain restriction for corporate integrity</p>
                 </div>
                 <div class="flex items-center gap-3 pb-3">
                     <div class="rounded-full w-2 h-2 bg-accent"></div>
-                    <p class="text-sm">Custom ceremony branding, typography, and cover imagery</p>
+                    <p class="text-sm">Unique single-use ballot tokens generated per verified voter</p>
                 </div>
                 <div class="flex gap-3 items-center pb-3">
                     <div class="rounded-full w-2 h-2 bg-accent"></div>
-                    <p class="text-sm">Custom ceremony branding, typography, and cover imagery</p>
+                    <p class="text-sm">Device fingerprinting and bot mitigation without captchas</p>
                 </div>
                 <div class="flex gap-3 items-center">
                     <div class="rounded-full w-2 h-2 bg-accent"></div>
-                    <p class="text-sm">Custom ceremony branding, typography, and cover imagery</p>
+                    <p class="text-sm">End-to-end encrypted ballot boxes with verifiable tally audit</p>
                 </div>
             </div>
             <div>
                 <hr class="pb-5">
-                <h3 class="font-semibold text-brand-dark-navy pb-3 text-xl">Setup & Customization</h3>
-                <p class="text-sm text-brand-dark-navy/50 max-w-md pb-6">Full creative command over how ballots look, from custom brands marks to candidates storytelling</p>
+                <h3 class="font-semibold text-brand-dark-navy pb-3 text-xl">Results & sharing</h3>
+                <p class="text-sm text-brand-dark-navy/50 max-w-md pb-6">Awesome reveals that make winners feel truly honored, whether virtually or on a live stage.</p>
                 <div class="flex items-center gap-3 pb-3">
                     <div class="rounded-full w-2 h-2 bg-accent"></div>
-                    <p class="max-w-md text-sm">Custom ceremony branding, typography, and cover imagery</p>
+                    <p class="max-w-md text-sm">Organizer-controlled lockbox until your official ceremony</p>
                 </div>
                 <div class="flex items-center gap-3 pb-3">
                     <div class="rounded-full w-2 h-2 bg-accent"></div>
-                    <p class="text-sm">Custom ceremony branding, typography, and cover imagery</p>
+                    <p class="text-sm">Full-screen live stage reveal mode with reveal animations</p>
                 </div>
                 <div class="flex gap-3 items-center pb-3">
                     <div class="rounded-full w-2 h-2 bg-accent"></div>
-                    <p class="text-sm">Custom ceremony branding, typography, and cover imagery</p>
+                    <p class="text-sm">Exportable winner certificates, ribbons, and digital badges</p>
                 </div>
                 <div class="flex gap-3 items-center">
                     <div class="rounded-full w-2 h-2 bg-accent"></div>
-                    <p class="text-sm">Custom ceremony branding, typography, and cover imagery</p>
+                    <p class="text-sm">Archived historical records for recurring annual traditions</p>
                 </div>
             </div>
              
         </div>
                   </section>
                   <!--Why Us-->
-                  <section class="bg-brand-dark-navy pt-20">
+                  <section id="why-us" class="bg-brand-dark-navy pt-20">
                     <h2 class="text-white text-3xl font-semibold font-serif pb-2 text-center">Simple. Flexible. Fair.</h2>
                     <p class="text-sm text-gray-400 font-serif text-center pb-12">The foundation behind every vote cast on Votique.</p>
-                    <div class="grid grid-cols-3 gap-8 px-6 border-2 ml-8 max-8xl pb-20">
+                    <div class="grid grid-cols-3 gap-8 px-6 ml-8  min-w-lg pb-20">
             <div class="bg-brand-light/30 rounded-md p-8">
                 <div class="rounded-lg py-2 px-4 bg-brand-dark-navy text-accent w-fit mb-4">1</div>
-                <h3 class="text-brand-light font-semibold font-serif pb-2">Simple   </h3>
-                <p class="text-sm max-w-sm pb-4 text-brand-light">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum expedita similique esse eos quae corporis in odio placeat minima amet?</p>
+                <h3 class="text-brand-light font-semibold font-serif pb-2">Simple</h3>
+                <p class="text-sm max-w-sm pb-4 text-brand-light leading-normal">No voter accounts, downloads, or complicated registration steps. One clean link opens a fast, responsive ballot ready in seconds.</p>
                 </div>  
-                 <div class="bg-brand-light/30 px-5 pt-5 rounded-md">
+                 <div class="bg-brand-light/30 p-8 rounded-md">
                 <div class="rounded-lg py-2 px-4 bg-brand-dark-navy text-accent w-fit mb-4">2</div>
-                <h3 class="text-brand-dark-navy font-semibold font-serif pb-2">Flexible</h3>
-                <p class="text-sm max-w-sm pb-4 text-brand-light">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta aliquid aspernatur, vero repudiandae dolorem hic itaque esse possimus porro doloribus!</p>
+                <h3 class="text-brand-light font-semibold font-serif pb-2">Flexible</h3>
+                <p class="text-sm max-w-sm pb-4 text-brand-light leading-normal">Adapt to any voting style: ranked choice, weighted jury votes, open nominations, or single-select crowd favorites, with equal ease</p>
                 </div>
-                 <div class="bg-brand-light/30 px-5 pt-5 rounded-md">
+                 <div class="bg-brand-light/30 p-8 rounded-md">
                 <div class="rounded-lg py-2 px-4 bg-brand-dark-navy text-accent w-fit mb-4">3</div>
-                <h3 class="text-brand-dark-navy font-semibold font-serif pb-2">Fair</h3>
-                <p class="text-sm max-w-sm pb-6 text-brand-light leading-relaxed">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores totam perferendis error at laudantium dicta aliquam aspernatur illum adipisci dolore.</p>
+                <h3 class="text-brand-light font-semibold font-serif pb-2">Fair</h3>
+                <p class="text-sm max-w-sm pb-6 text-brand-light leading-normal">Private until the reveal. Even organizers can't sneak a peek before polls close, preventing premature leaks and confirmation bias</p>
                 </div>
                     </div>
 
                   </section>
                   <!--Pricing-->
-                  <section class="bg-brand-light pt-20">
+                  <section id="pricing" class="bg-brand-light pt-20">
                     <h2 class="text-brand-dark-navy font-semibold font-serif text-2xl text-center pb-3">Honest, transparent Pricing</h2>
                     <p class="font-serif text-sm text-brand-dark-navy/50 text-center max-w-md mx-auto pb-8">Get started for free or unlock ceremony-grade controls for your organization</p>
                     <!--Free and Pro-->
-                    <div class="grid grid-cols-2 gap-8 ml-8 mx-auto max-w-6xl  px-6 pb-20">
+                    <div class="grid grid-cols-2 gap-8 mx-auto max-w-6xl  px-6 pb-20">
                         <!--Free pricing-->
-                        <div class="bg-white py-6 px-6 grid w-fit rounded-md">
-                            <h3 class="font-semibold font-serif">Free</h3>
+                        <div class="bg-white py-6 px-6 grid rounded-md">
+                            <h3 class="font-semibold font-serif text-3xl">Free</h3>
                             <p class="text-xs pb-3 ">For small teams, clubs, and informal awards</p>
-                            <div class="flex mb-4 space-x-1 border-2 w-fit items-baseline">
+                            <div class="flex mb-4 space-x-1 items-baseline">
                                 <h3 class="font-semibold font-serif text-3xl">$0</h3>
                                 <p class="text-xs text-brand-dark-navy/60">forever</p>
                             </div>
@@ -251,39 +269,46 @@
                                     <p>✔</p>
                                     <p>Private sealed result lockbox</p>
                                 </div>
-                                <button class="text-center w-full py-2 rounded-md border-2 border-brand-dark-navy bg-transparent text-brand-dark-navy text-sm">Get started free</button>
+                                <button class="text-center w-full py-2 rounded-md border-2 border-brand-dark-navy bg-transparent text-brand-dark-navy text-sm cursor-pointer font-medium active:shadow-md">Get started free</button>
                             
                         </div>
-                        <div class="bg-white pt-6 px-6 grid">
-                            <h3 class="font-semibold font-serif">Free</h3>
-                            <p class="text-xs pb-3 ">For small teams, clubs, and informal awards</p>
-                            <div class="flex mb-4 space-x-1 border-2 w-fit">
-                                <h3 class="font-semibold font-serif">$0</h3>
-                                <p class="text-xs items-baseline">forever</p>
-                            </div>
-                                <div class="flex gap-2 mb-1.5">
-                                    <p>✔</p>
-                                    <p>Up to 100 voters per event</p>
-                                </div>
-                                <div class="flex gap-2 mb-1.5">
-                                    <p>✔</p>
-                                    <p>3 active award categories</p>
-                                </div>
-                                <div class="flex gap-2 mb-1.5">
-                                    <p>✔</p>
-                                    <p>Single choice ballot format</p>
-                                </div>
-                                <div class="flex gap-2 mb-1.5">
-                                    <p>✔</p>
-                                    <p>Instant link distribution</p>
-                                </div>
-                                <div class="mb-20 flex gap-2">
-                                    <p>✔</p>
-                                    <p>Private sealed result lockbox</p>
-                                </div>
-                                <button class="text-center w-full border-2 border-brand-dark-navy bg-transparent text-brand-dark-navy text-sm">Get started free</button>
-                            
-                        </div>
+                        <!--Pro Pricing-->
+                        <div class="bg-brand-dark-navy py-6 px-6 rounded-md relative">
+  <span class="absolute top-6 right-6 bg-accent text-brand-dark-navy text-xs font-semibold px-3 py-1 rounded-full">Popular</span>
+
+  <h3 class="font-semibold font-serif text-white text-3xl">Pro</h3>
+  <p class="text-xs text-brand-light/60 pb-3">For organizations, conferences, and formal ceremonies</p>
+
+  <div class="flex items-baseline space-x-1 mb-4">
+    <h3 class="font-semibold font-serif text-3xl text-white">$49</h3>
+    <p class="text-xs text-brand-light/60">per event</p>
+  </div>
+
+  <div class="flex gap-2 mb-1.5 text-brand-light">
+    <p class="text-accent">✔</p>
+    <p>Unlimited verified voters</p>
+  </div>
+  <div class="flex gap-2 mb-1.5 text-brand-light">
+    <p class="text-accent">✔</p>
+    <p>Unlimited categories and nominees</p>
+  </div>
+  <div class="flex gap-2 mb-1.5 text-brand-light">
+    <p class="text-accent">✔</p>
+    <p>Custom branding and logo watermarking</p>
+  </div>
+  <div class="flex gap-2 mb-1.5 text-brand-light">
+    <p class="text-accent">✔</p>
+    <p>Ceremony presentation reveal mode</p>
+  </div>
+  <div class="flex gap-2 mb-12 text-brand-light">
+    <p class="text-accent">✔</p>
+    <p>Exportable CSV tallies and certificates</p>
+  </div>
+
+  <button class="text-center w-full py-2 rounded-md bg-accent text-brand-dark-navy text-sm font-medium cursor-pointer active:shadow-brand-light/30 active:shadow-sm">
+    Launch Pro vote
+  </button>
+</div>
                     </div>
 
 
@@ -303,19 +328,19 @@
         <h4 class="text-accent font-serif">PRODUCT</h4>
         <ul class="text-xs font-serif space-y-2">
             <li>
-                <a href="">How it works</a>
+                <a href="#how-it-works">How it works</a>
             </li>
             <li>
-                <a href="">Ballot Customization</a>
+                <a href="#features">Ballot Customization</a>
             </li>
             <li>
-                <a href="">Audit verification</a>
+                <a href="#features">Audit verification</a>
             </li>
             <li>
-                <a href="">Pricing & plans</a>
+                <a href="#pricing">Pricing & plans</a>
             </li>
             <li>
-                <a href="">Stage reveal mode</a>
+                <a href="#how-it-works">Stage reveal mode</a>
             </li>
         </ul>
     </div>
@@ -344,13 +369,13 @@
 
                             </div>
                             <div>
-                                <hr class="pb-8 text-brand-light">
+                                <hr class="pb-8 border-brand-light">
                             <div class="flex justify-between pr-6 text-brand-light">
                                 
-                                <p class="text-sm font-serif">@&copy; 2026 Votique inc. All rights reserved. </p>
+                                <p class="text-sm font-serif">&copy; 2026 Votique inc. All rights reserved. </p>
                                 <ul class="text-sm font-serif space-x-3.5 flex">
                                     <li>
-                                        <a href="">Privacy policy</a>
+                                        <a href="./privacypolicy.html" target="_blank">Privacy policy</a>
                                     </li>
                                     <li>
                                         <a href="">Terms of service</a>
@@ -365,6 +390,5 @@
 
                     </section>
                   </footer>
-                  <!--This is a screen record of what I've done and the code. I want you to review it with the reference and correct what is not looking right, especially the pricing section. Leave responsiveness for now, I'll handle that later. Don't send the corrected full code, just send it section by section with explanations on what needs to be changed + the code well layed out. All borders are intentional.-->
 </body>
 </html>

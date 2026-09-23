@@ -1,5 +1,16 @@
 @import "tailwindcss";
 
+@keyframes scroll-left {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+.animate-scroll {
+  animation: scroll-left 28s linear infinite;
+}
+.animate-scroll:hover {
+  animation-play-state: paused;
+}
+
 @theme {
     --color-brand-dark-navy : #14151F; /* Hero, footer, scroller */
     --color-accent : #D9a94e; /*Buttons, CTA highlights, active states */

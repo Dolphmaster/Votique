@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign in</title>
+    <link rel="stylesheet" href="./public/output.css">
+</head>
+<body>
+    <!--Main section-->
+    <section class="grid grid-cols-2">
+        <!--Section A-->
+        <div class="p-10 bg-brand-light brand">
+            <a href="/">
+            <div class=" flex items-center gap-2 max-w-7xl mb-20">
+            <img src="./public/images/Votique-logo.png" alt="Votique logo" class="h-8 w-8">
+            <span class="text-xl text-brand-dark-navy font-serif">Votique</span>
+        </div>
+        </a>
+        <h3 class="text-brand-dark-navy font-medium text-2xl pb-2">Sign in to Votique</h3>
+        <p  class="pb-8 text-sm">Enter your credentials to access your ballots and nominations</p>
+
+        <form class="grid mb-3">
+            <label for="" class=" text-brand-dark-navy font-medium pb-2">Email address</label>
+            <input type="email" name="" id="email-address" placeholder="name@address.com"  class="mb-2 placeholder:font-light bg-white rounded-md p-2 shadow-md ">
+        </form>
+        <form action="" class="grid mb-4">
+            <label for="" class="text-brand-dark-navy font-medium pb-2">Password</label>
+            <input type="password" name="" id="user-password" class="mb-3 text-brand-dark-navy bg-white rounded-md py-1.5 pl-2 shadow-md">
+            </form>
+            <div class=" flex justify-between items-center text-sm mb-6">
+                <form action="" class="items-center">
+            <input type="checkbox" name="Keep me logged in" id="">
+            <label for="checkbox" >Keep me logged in</label>
+            </form>
+            <a href="">Forgot password?</a>
+            </div>
+            <form action="" class="mb-6">
+            <button type="submit" class=" bg-accent text-brand-dark-navy font-medium text-center items-center py-2 w-full cursor-pointer hover:shadow-md active:scale-95">Log in</button>
+        </form>
+        <div class="flex justify-center mb-6">
+        <p>Don't have an account?</p><span class="text-brand-dark-navy font-medium outline-brand-dark-navy"><a href="">Sign up</a></span>
+        </div>  
+        <div class="flex justify-center gap-8">
+        <button type="button" class="cursor-pointer hover:opacity-85 hover:scale-95">
+  <img src="./public/images/google-signin-light-square.svg" alt="" class="w-full">
+</button>
+
+<button type="button" class="cursor-pointer hover:opacity-85 hover:scale-95">
+  <img src="./public/images/microsoft_signin_light.svg" alt="" class="w-full">
+</button>
+</div>
+        </div>
+        <div class="bg-blend-difference bg-brand-dark-navy pt-28 px-10">
+            <h3 class="max-w-md pb-4 text-brand-light text-2xl font-serif">Honoring excellence through decisive acclaim.</h3>
+            <p class="text-sm text-brand-light/80 max-w-md pb-10">Cast your vote among the world's most distinguished creators, jury-selected nominees, and landmark cultural honors </p>
+            <div class="bg-brand-light w-[60%] h-64 rounded-md -rotate-6 mb-12 shadow-lg"></div>
+            <hr class="border-brand-light/80 mb-4">
+            <div class="flex gap-8 text-brand-light/80 text-sm">
+            <span>&copy; 2026 Votique Cultural Honors and Creative Excellence</span>
+            <p class="font-serif">ENCRYPTED PROTOCOL</p>
+            <p class="font-serif">VERIFIED REGISTRY</p>
+            </div>
+        </div>
+
+    </section>
+    
+</body>
+</html>
