@@ -4,11 +4,94 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign Up</title>
+    <link rel="stylesheet" href="./public/output.css">
 </head>
 <body>
-    <section class="grid grid-cols-2 ">
-        <div class="">
+     <!--Main section-->
+    <section class="grid grid-cols-2">
+        <!--Section A-->
+        <div class="p-10 bg-brand-light brand">
+            <a href="/">
+            <div class=" flex items-center gap-2 max-w-7xl mb-20">
+            <img src="./public/images/Votique-logo.png" alt="Votique logo" class="h-8 w-8">
+            <span class="text-xl text-brand-dark-navy font-semibold font-serif">Votique</span>
+        </div>
+        </a>
+        <h3 class="text-brand-dark-navy font-semibold font-serif text-2xl pb-2 max-w-3xs">Create your Votique account</h3>
+        <p  class="pb-8 text-sm">Join the delegation to cast verified votes, submit nominations, and track honors.</p>
 
+        <form class="grid mb-3">
+            <label for="" class=" text-brand-dark-navy font-medium pb-2">Full name</label>
+            <input type="email" name="" id="email-address" placeholder="Dolph Master"  class="mb-2 placeholder:font-light bg-white rounded-md p-2 shadow-md ">
+        </form>
+        <form class="grid mb-3">
+            <label for="" class=" text-brand-dark-navy font-medium pb-2">Email address</label>
+            <input type="email" name="" id="email-address" placeholder="name@address.com"  class="mb-2 placeholder:font-light bg-white rounded-md p-2 shadow-md ">
+        </form>
+        <form action="" class="grid mb-4">
+            <label for="" class="text-brand-dark-navy font-medium pb-2">Password</label>
+            <input type="password" name="" id="user-password" class="mb-3 text-brand-dark-navy bg-white rounded-md py-1.5 pl-2 shadow-md">
+            </form>
+                <form action="" class="items-center mb-4">
+            <input type="checkbox" name="Keep me logged in" id="">
+            <label for="checkbox" class="space-x-2">I agree to the <a href="" class="underline font-medium">Terms of Excellence</a>and <a href="" class="underline font-medium">Privacy policy</a></label>
+            </form>
+            <form action="" class="mb-6">
+            <button type="submit" class=" bg-accent text-brand-dark-navy font-medium text-center items-center py-2 w-full cursor-pointer hover:shadow-md active:scale-95">Create account</button>
+        </form>
+        <div class="flex justify-center mb-6">
+        <p>Already have an account?</p><span class="text-brand-dark-navy font-medium outline-brand-dark-navy"><a href="./login.html">Log in</a></span>
+        </div>  
+        <div class="flex justify-center gap-8">
+        <button type="button" class="cursor-pointer hover:opacity-85 hover:scale-95">
+  <img src="./public/images/google-signin-light-square.svg" alt="" class="w-full">
+</button>
+
+<button type="button" class="cursor-pointer hover:opacity-85 hover:scale-95">
+  <img src="./public/images/microsoft_signin_light.svg" alt="" class="w-full">
+</button>
+</div>
+        </div>
+        <div class="bg-blend-difference bg-brand-dark-navy pt-12 px-10">
+            <div class="bg-brand-light/5 w-fit py-2 px-3 flex items-center text-sm font-medium text-accent font-sans rounded-full mb-8">
+            <div class="w-2 h-2 rounded-full bg-accent mr-2"></div>
+                <p>OFFICIAL DELEGATION PORTAL</p>
+            </div>
+             <hr class="border-brand-light/30 mb-16">
+            <h3 class="max-w-sm pb-4 text-brand-light text-2xl font-serif space-x-3">Begin your vote with unyielding integrity. </h3>
+            <p class="text-sm text-brand-light/80 max-w-md pb-10">Cast your vote among the world's most distinguished creators, jury-selected nominees, and landmark cultural honors </p>
+           <div class="mb-10">
+            <div class="bg-brand-light/5 py-4 pl-4 flex w-fit rounded-xs mb-3">
+                <div class=" flex justify-center w-8 h-8 text-sm items-center bg-accent/20 text-accent mr-3 rounded-md">1</div>
+                <div class="max-w-sm">
+                <h3 class="font-serif font-medium text-brand-light">Results stay private until you reveal them</h3>
+            <p class="text-sm text-brand-light/30">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat non modi aperiam nisi nesciunt reprehenderit!
+            </p>
+            </div>
+            </div>
+            <div class="bg-brand-light/5 py-4 pl-4 flex w-fit rounded-xs mb-3">
+                <div class=" flex justify-center w-8 h-8 text-sm items-center bg-accent/20 text-accent mr-3 rounded-md">2</div>
+                <div class="max-w-sm">
+                <h3 class="font-serif font-medium text-brand-light">Results stay private until you reveal them</h3>
+            <p class="text-sm text-brand-light/30">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat non modi aperiam nisi nesciunt reprehenderit!
+            </p>
+            </div>
+            </div>
+            <div class="bg-brand-light/5 py-4 pl-4 flex w-fit rounded-xs mb-3">
+                <div class=" flex justify-center w-8 h-8 text-sm items-center bg-accent/20 text-accent rounded-md mr-3">3</div>
+                <div class="max-w-sm">
+                <h3 class="font-serif font-medium text-brand-light">Results stay private until you reveal them</h3>
+            <p class="text-sm text-brand-light/30">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat non modi aperiam nisi nesciunt reprehenderit!
+            </p>
+            </div>
+            </div>
+           </div>
+            <hr class="border-brand-light/30 mb-6">
+            <div class="flex gap-8 text-brand-light/80 text-sm">
+            <span>&copy; 2026 Votique Cultural Honors and Creative Excellence</span>
+            <p class="font-serif">ENCRYPTED PROTOCOL</p>
+            <p class="font-serif">VERIFIED REGISTRY</p>
+            </div>
         </div>
 
     </section>
